@@ -24,14 +24,36 @@ body{
     background-position:center;
     background-repeat:no-repeat;
     background-attachment:fixed;
+}.logo{
+    text-align:center;
+    margin-top:35px;
+    margin-bottom:20px;
+    line-height:1.5;
 }
-h1{
-    background:transparent;
-    color:#e8c86d;
-    padding:35px 20px;
-    margin:0;
-    font-size:48px;
-    text-shadow:2px 2px 12px rgba(0,0,0,.8);
+
+.logo .arabic{
+    display:block;
+    font-size:58px;
+    font-weight:bold;
+    color:#e3c26a;
+    text-shadow:
+        0 0 10px rgba(0,0,0,.8),
+        0 0 20px rgba(212,175,55,.3);
+}
+
+.logo .english{
+    display:block;
+    font-size:18px;
+    color:#f5e6b8;
+    letter-spacing:5px;
+    margin-top:8px;
+}
+
+.logo .ornament{
+    display:block;
+    color:#d4af37;
+    font-size:24px;
+    letter-spacing:10px;
 }
 
 .gallery{
@@ -79,8 +101,19 @@ button:hover{
 
 <body>
 
+<h1 class="logo">
+    <span class="ornament">❁ ✦ ❁</span><br>
 
-<h1>☕ عمر الخيام كافيه</h1>
+    <span class="arabic">
+        عُمَرُ الخَيّام
+    </span><br>
+
+    <span class="english">
+        OMAR KHAYYAM CAFE
+    </span><br>
+
+    <span class="ornament">❁ ✦ ❁</span>
+</h1>
 
 
 <div class="gallery">
