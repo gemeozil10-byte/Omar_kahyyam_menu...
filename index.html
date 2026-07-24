@@ -12,43 +12,55 @@
 
 body{
     margin:0;
-    background:#f5f1ea;
+    background:url("background.jpg") center center/cover fixed no-repeat;
     font-family:Arial,sans-serif;
     text-align:center;
 }
-
 h1{
-    background:#4a2c1d;
-    color:white;
-    padding:20px;
+    background:transparent;
+    color:#e8c86d;
+    padding:35px 20px;
     margin:0;
+    font-size:48px;
+    text-shadow:2px 2px 12px rgba(0,0,0,.8);
 }
 
 .gallery{
     padding:20px;
+    background:rgba(0,0,0,0.25);
+    margin:20px;
+    border-radius:20px;
 }
-
-.gallery img{
+  .gallery img{
     width:90%;
     max-width:600px;
-    border-radius:15px;
+    border-radius:20px;
     margin:20px auto;
     display:block;
-}
+    border:3px solid rgba(212,175,55,.6);
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+  }  
+
+
+
+
 
 button{
-    background:#4a2c1d;
+    background:linear-gradient(to bottom,#b68b3a,#7a5524);
     color:white;
-    border:none;
-    padding:12px 25px;
-    font-size:20px;
-    border-radius:10px;
+    border:2px solid #d4af37;
+    padding:14px 28px;
+    font-size:22px;
+    border-radius:15px;
     margin:10px;
     cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
 }
 
 button:hover{
-    background:#6b4028;
+    background:linear-gradient(to bottom,#d4af37,#8b5e2b);
+    transform:scale(1.08);
 }
 
 </style>
