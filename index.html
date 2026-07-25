@@ -118,15 +118,11 @@ button:hover{
 
 <img id="menuImage" src="m1.png" alt="Menu">
 
-
 <button onclick="prevImage()">⬅️</button>
 
 <button onclick="nextImage()">➡️</button>
 
-
 </div>
-
-
 
 <script>
 
@@ -139,43 +135,28 @@ let images = [
 "m6.png",
 "m7.png",
 "m8.png",
-"m9.png",
-"m10.png",
-"m11.png"
+"m9.jpg",
+"m10.jpg",
+"m11.jpg"
 ];
-
 
 let current = 0;
 
-
-let img = document.getElementById("menuImage");
-
-
-function nextImage(){
-
-    current++;
-
-    if(current >= images.length){
-        current = 0;
-    }
-
-    img.src = images[current];
-
+function showImage() {
+    document.getElementById("menuImage").src = images[current];
 }
 
-
-
-function prevImage(){
-
-    current--;
-
-    if(current < 0){
-        current = images.length - 1;
-    }
-
-    img.src = images[current];
-
+function nextImage() {
+    current = (current + 1) % images.length;
+    showImage();
 }
+
+function prevImage() {
+    current = (current - 1 + images.length) % images.length;
+    showImage();
+}
+
+</script>
 
 
 </script>
